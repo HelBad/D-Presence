@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".AkunMahasiswaFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="PROFIL MAHASISWA"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorBlack" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="70dp">
+
+        <TextView
+            android:id="@+id/txtNIM"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="16dp"
+            android:text="NIM "
+            android:textColor="@color/colorBlack" />
+
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/txtNIM"
+            android:textSize="16dp"
+            android:text=": "
+            android:textColor="@color/colorBlack" />
+
+        <TextView
+            android:id="@+id/nimMhs"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/txtNIM"
+            android:textSize="16dp"
+            android:text=""
+            android:textColor="@color/colorBlack" />
+
+        <TextView
+            android:id="@+id/txtNama"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@id/txtNIM"
+            android:textSize="16dp"
+            android:text="NAMA "
+            android:textColor="@color/colorBlack" />
+
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/txtNIM"
+            android:layout_toRightOf="@id/txtNama"
+            android:textSize="16dp"
+            android:text=": "
+            android:textColor="@color/colorBlack" />
+
+        <TextView
+            android:id="@+id/namaMhs"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@id/txtNIM"
+            android:layout_toRightOf="@id/txtNama"
+            android:textSize="16dp"
+            android:text=""
+            android:textColor="@color/colorBlack" />
+
+        <TextView
+            android:id="@+id/txtEmail"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@id/txtNama"
+            android:textSize="16dp"
+            android:text="EMAIL "
+            android:textColor="@color/colorBlack" />
+
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/txtNama"
+            android:layout_toRightOf="@id/txtEmail"
+            android:textSize="16dp"
+            android:text=": "
+            android:textColor="@color/colorBlack" />
+
+        <TextView
+            android:id="@+id/emailMhs"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@id/txtNama"
+            android:layout_toRightOf="@id/txtEmail"
+            android:textSize="16dp"
+            android:text=""
+            android:textColor="@color/colorBlack" />
+
+        <TextView
+            android:id="@+id/txtKelas"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@id/txtEmail"
+            android:textSize="16dp"
+            android:text="KELAS "
+            android:textColor="@color/colorBlack" />
+
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/txtEmail"
+            android:layout_toRightOf="@id/txtKelas"
+            android:textSize="16dp"
+            android:text=": "
+            android:textColor="@color/colorBlack" />
+
+        <TextView
+            android:id="@+id/kelasMhs"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@id/txtEmail"
+            android:layout_toRightOf="@id/txtKelas"
+            android:textSize="16dp"
+            android:text=""
+            android:textColor="@color/colorBlack" />
+
+        <TextView
+            android:id="@+id/txtProdi"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@id/txtKelas"
+            android:textSize="16dp"
+            android:text="PRODI "
+            android:textColor="@color/colorBlack" />
+
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/txtKelas"
+            android:layout_toRightOf="@id/txtProdi"
+            android:textSize="16dp"
+            android:text=": "
+            android:textColor="@color/colorBlack" />
+
+        <TextView
+            android:id="@+id/prodiMhs"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@id/txtKelas"
+            android:layout_toRightOf="@id/txtProdi"
+            android:textSize="16dp"
+            android:text=""
+            android:textColor="@color/colorBlack" />
+
+        <TextView
+            android:id="@+id/txtKelamin"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@id/txtProdi"
+            android:textSize="16dp"
+            android:text="JENIS KELAMIN "
+            android:textColor="@color/colorBlack" />
+
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/txtProdi"
+            android:layout_toRightOf="@id/txtKelamin"
+            android:textSize="16dp"
+            android:text=": "
+            android:textColor="@color/colorBlack" />
+
+        <TextView
+            android:id="@+id/genderMhs"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@id/txtProdi"
+            android:layout_toRightOf="@id/txtKelamin"
+            android:textSize="16dp"
+            android:text=""
+            android:textColor="@color/colorBlack" />
+
+        <TextView
+            android:id="@+id/txtAlamat"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@id/txtKelamin"
+            android:textSize="16dp"
+            android:text="ALAMAT "
+            android:textColor="@color/colorBlack" />
+
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/txtKelamin"
+            android:layout_toRightOf="@id/txtAlamat"
+            android:textSize="16dp"
+            android:text=": "
+            android:textColor="@color/colorBlack" />
+
+        <TextView
+            android:id="@+id/alamatMhs"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@id/txtKelamin"
+            android:layout_toRightOf="@id/txtAlamat"
+            android:textSize="16dp"
+            android:text=""
+            android:textColor="@color/colorBlack" />
+
+        <TextView
+            android:id="@+id/txtTelp"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@id/txtAlamat"
+            android:textSize="16dp"
+            android:text="NO. TELEPON "
+            android:textColor="@color/colorBlack" />
+
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/txtAlamat"
+            android:layout_toRightOf="@id/txtTelp"
+            android:textSize="16dp"
+            android:text=": "
+            android:textColor="@color/colorBlack" />
+
+        <TextView
+            android:id="@+id/telpMhs"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@id/txtAlamat"
+            android:layout_toRightOf="@id/txtTelp"
+            android:textSize="16dp"
+            android:text=""
+            android:textColor="@color/colorBlack" />
+
+    </RelativeLayout>
+</FrameLayout>

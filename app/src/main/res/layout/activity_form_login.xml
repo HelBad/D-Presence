@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorWhite"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FormLogin">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarLogin"
+        android:layout_width="match_parent"
+        android:layout_height="800px"
+        android:background="@color/colorSky"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Dark">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="50dp"
+            android:foregroundGravity="center"
+            android:src="@drawable/logo"/>
+    </androidx.appcompat.widget.Toolbar>
+
+    <GridLayout
+        android:background="@android:color/transparent"
+        android:layout_width="match_parent"
+        android:layout_marginTop="700px"
+        android:layout_height="match_parent"
+        android:alignmentMode="alignMargins"
+        android:columnCount="2"
+        android:rowCount="3"
+        android:padding="14dp" >
+
+        <androidx.cardview.widget.CardView
+            app:cardElevation="8dp"
+            app:cardCornerRadius="8dp"
+            app:cardBackgroundColor="#EEEEEE"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:layout_gravity="center_horizontal">
+
+                <EditText
+                    android:id="@+id/textUsername"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/login_box"
+                    android:ems="10"
+                    android:hint="Username"
+                    android:inputType="textEmailAddress"
+                    android:cursorVisible="false"
+                    android:gravity="center_vertical" >
+                </EditText>
+
+                <EditText
+                    android:id="@+id/textPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/login_box"
+                    android:ems="10"
+                    android:hint=" Password"
+                    android:inputType="textPassword"
+                    android:cursorVisible="false"
+                    android:gravity="center_vertical" >
+                </EditText>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text=" "
+                    android:textStyle="bold"
+                    android:textColor="@color/colorBlack"
+                    android:textAlignment="center" >
+                </TextView>
+
+                <Button
+                    android:id="@+id/loginDosen"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/btn_login"
+                    android:text="Masuk sebagai Dosen"
+                    android:textColor="@color/colorWhite"
+                    android:textAlignment="center" >
+                </Button>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="atau"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorBlack"
+                    android:textAlignment="center" >
+                </TextView>
+
+                <Button
+                    android:id="@+id/loginMhs"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/btn_login"
+                    android:text="Masuk sebagai Mahasiswa"
+                    android:textColor="@color/colorWhite"
+                    android:textAlignment="center" >
+                </Button>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </GridLayout>
+</RelativeLayout>
