@@ -45,12 +45,12 @@
             android:id="@+id/nimMhs"
             android:layout_width="230dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
             android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
             android:layout_toRightOf="@id/txtNIM"
-            android:textSize="16dp"
             android:text=""
-            android:textColor="@color/colorBlack" />
+            android:textColor="@color/colorBlack"
+            android:textSize="16dp" />
 
         <TextView
             android:id="@+id/txtNama"
